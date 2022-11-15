@@ -1,0 +1,12 @@
+CRITICAL - 2022-07-05 22:54:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\card\detail.php on line 71.
+ 1 APPPATH\Views\card\detail.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\card\\detail.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\card\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('card/detail', [], true)
+ 5 APPPATH\Controllers\ShowCard.php(27): view('card/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ShowCard->detail('FCPATH\\assets', 'bootstrap', 'js', 'bootstrap.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ShowCard))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

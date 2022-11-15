@@ -1,0 +1,38 @@
+CRITICAL - 2022-06-12 22:14:14 --> Invalid file: pages/home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(12): view('pages/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-12 22:28:03 --> Invalid file: learnmore.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('learnmore.php')
+ 2 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('learnmore', null, true)
+ 3 APPPATH\Views\pages\home.php(12): CodeIgniter\View\View->include('learnmore')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\home.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/home', [], true)
+ 7 APPPATH\Controllers\Pages.php(12): view('pages/home', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pages->index()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-12 22:28:25 --> Invalid file: learnmore.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('learnmore.php')
+ 2 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('learnmore', null, true)
+ 3 APPPATH\Views\pages\home.php(12): CodeIgniter\View\View->include('learnmore')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\home.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/home', [], true)
+ 7 APPPATH\Controllers\Pages.php(12): view('pages/home', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pages->index()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,73 @@
+ERROR - 2022-07-26 22:06:52 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-07-26 22:06:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Pages.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM card ORDER BY id DESC')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pages->index()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-26 22:28:12 --> Invalid file: admin/formDoc.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/formDoc.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/formDoc', [], true)
+ 3 APPPATH\Controllers\Admin.php(93): view('admin/formDoc', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->doc()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-26 23:05:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\card\detail.php on line 67.
+ 1 APPPATH\Views\card\detail.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\card\\detail.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\card\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('card/detail', [], true)
+ 5 APPPATH\Controllers\ShowCard.php(14): view('card/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ShowCard->detail('FCPATH\\assets', 'bootstrap', 'js', 'bootstrap.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ShowCard))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-26 23:06:27 --> Call to a member function move() on null
+in APPPATH\Controllers\Admin.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->save_card()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-26 23:14:18 --> Call to a member function move() on null
+in APPPATH\Controllers\Admin.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->save_card()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-26 23:16:13 --> Call to a member function move() on null
+in APPPATH\Controllers\Admin.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->save_card()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-26 23:26:11 --> Undefined array key "gambar"
+in APPPATH\Views\card\doc.php on line 18.
+ 1 APPPATH\Views\card\doc.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'APPPATH\\Views\\card\\doc.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\card\\doc.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('card/doc', [], true)
+ 5 APPPATH\Controllers\ShowDoc.php(16): view('card/doc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ShowDoc->doc()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ShowDoc))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-26 23:29:02 --> Call to a member function move() on null
+in APPPATH\Controllers\Admin.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->save_card()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
